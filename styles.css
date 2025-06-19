@@ -8,6 +8,17 @@
       background-color: #121212;
       color: white;
     }
+
+    #main-header {
+      transition: transform 0.4s ease, opacity 0.4s ease;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #main-header.hidden {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
     header {
       height: 120px;
       position: sticky;
@@ -26,6 +37,10 @@
       display: flex;
       align-items: center;
       gap: 60px;
+    }
+
+    .nav-link:active {
+      color: #ff4000;
     }
     .header-right {
       display: flex;
@@ -466,56 +481,14 @@
     width: 900px;
     height: 500px;
     gap: 0px;
+
 }
-/* @media (min-width: 500px) and (max-width: 1140px) {
-  .Main {
-    margin: 0 0 0 0px;
-    height: fit-content;
-  }
-    
-  .About {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: auto;
-    }
-    .PP {
-      width: 100%;
-      display: flex;
-      padding-left: 0px;
-      padding-right: 0px;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-right: 0px;
-      margin-bottom: 0px;
-    }
-    .Edu, .Skills {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px;
-    }
 
-    .About .Edu {
-      padding: 24px 88px;
-    }
-    .About .Skills {
-      padding: 0 88px;
-    }
-    .PP .Description {
-       font-size: 16px;
-       line-height: 22px;
-       font-weight: 700;
-       text-align: left;
-       margin-left: 24px;
-       margin-top: 20px;
-      text-align: left;
-      max-width: 100%;
-      max-height: 180px;
-    }
+.freespace {
+  display: flex;
+  height: 120px;
+}
 
-} */
  @media (min-width:501px) and (max-width:1140px) {
 
   .Skills {
@@ -946,6 +919,18 @@
 
   resize: none;
 }
+
+body {
+  scroll-snap-type: y mandatory;
+}
+
+.Projects-container {
+  scroll-snap-type: x mandatory;
+}
+.Card {
+  scroll-snap-align: start;
+}
+
 
 .contact-form textarea {
   height: 300px;

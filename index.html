@@ -4,38 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anurag Mishra | Portfolio</title>
+  <link rel="icon" href="/Assets/Icons/favicon.png" type="image/png">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header  id="main-header">
     <div class="logo">
       <img src="/Assets/Icons/Logo.svg" alt="Logo">
     </div>
     <div class="header-center">
       <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </div>
     <div class="header-right">
-      <a href="#" aria-label="LinkedIn" id="LinkedIn"><img src="/Assets/Icons/LinkedIn Icon.svg" alt="LinkedIn"></a>
-      <a href="#" aria-label="GitHub" id="Git"><img src="/Assets/Icons/github Icon.svg" alt="Github"></a>
-      <a href="#" aria-label="Download" id="Download"><img src="/Assets/Icons/Download Icon.svg" alt="Download"></a>
+      <a href="https://www.linkedin.com/in/betteranuragmishra/" aria-label="LinkedIn" id="LinkedIn"><img src="/Assets/Icons/LinkedIn Icon.svg" alt="LinkedIn"></a>
+      <a href="https://github.com/Anuragmishracodes" aria-label="GitHub" id="Git"><img src="/Assets/Icons/github Icon.svg" alt="Github"></a>
+      <a href="/Assets/Resume.pdf" download id="Download"><img src="/Assets/Icons/Download Icon.svg" alt="Download"></a>
       <a href="#" aria-label="Menu" id="Menu"><img src="/Assets/Icons/Menu-icon.svg" alt="Menu"></a>
     </div>
   </header>
 
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-text">
       <h1>Designing Elegant & <br>Efficient Web Interfaces</h1>
       <p>Hi, I’m Anurag Mishra — a full stack developer <br>dedicated to creating seamless, high-performance web applications.</p>
       <div class="buttons">
-        <a href="#" class="btn-primary">Let's Connect</a>
-        <a href="#" class="btn-outline">My Resume</a>
+        <a href="https://www.linkedin.com/in/betteranuragmishra/" class="btn-primary">Let's Connect</a>
+        <a href="/Assets/Resume.pdf" download class="btn-outline">My Resume</a>
       </div>
       <div class="tags">
         <div class="tag">✅ UI/UX Design</div>
@@ -48,7 +49,7 @@
       <img src="/Assets/Images/Rock Image.png" alt="3D Rock">
     </div>
   </section>
-  <div class="Main">
+  <div id="about" class="Main">
     <h3>Who Am I?</h3>
     <h1>About Me</h1>
   </div>
@@ -113,7 +114,7 @@
     </div>
   </div>
   <div class="freespace"></div>
-  <div class="Main">
+  <div id="projects" class="Main">
     <h3>What I Do?</h3>
     <h1>My Projects</h1>
   </div>
@@ -152,8 +153,8 @@
       </div>
       </div>
       <div class="Card-Links">
-      <a href="#" class="Gitlink">View Project</a>
-      <a href="#" class="livesite">View Project</a>
+      <a href="#" class="Gitlink">GitHub</a>
+      <a href="#" class="livesite">Live Site</a>
       </div>
       </div>
     </div>
@@ -191,8 +192,8 @@
       </div>
       </div>
       <div class="Card-Links">
-      <a href="#" class="Gitlink">View Project</a>
-      <a href="#" class="livesite">View Project</a>
+      <a href="#" class="Gitlink">GitHub</a>
+      <a href="#" class="livesite">Live Site</a>
       </div>
       </div>
     </div>
@@ -230,8 +231,8 @@
       </div>
       </div>
       <div class="Card-Links">
-      <a href="#" class="Gitlink">View Project</a>
-      <a href="#" class="livesite">View Project</a>
+      <a href="#" class="Gitlink">GitHub</a>
+      <a href="#" class="livesite">Live Site</a>
       </div>
       </div>
     </div>
@@ -269,8 +270,8 @@
       </div>
       </div>
       <div class="Card-Links">
-      <a href="#" class="Gitlink">View Project</a>
-      <a href="#" class="livesite">View Project</a>
+      <a href="#" class="Gitlink">GitHub</a>
+      <a href="#" class="livesite">Live Site</a>
       </div>
       </div>
     </div>
@@ -308,35 +309,27 @@
       </div>
       </div>
       <div class="Card-Links">
-      <a href="#" class="Gitlink">View Project</a>
-      <a href="#" class="livesite">View Project</a>
+      <a href="#" class="Gitlink">GitHub</a>
+      <a href="#" class="livesite">Live Site</a>
       </div>
       </div>
-    </div>
-  </div>
-  <div class="Slider">
-    <div class="LR">
-      <img src="/Assets/Icons/Left.svg" alt="Left-Slide" style="width: 30px;">
-    </div>
-    <div class="LR">
-      <img src="/Assets/Icons/Right.svg" alt="Right-Slide" style="width: 30px;">
     </div>
   </div>
   <div class="freespace"></div>
-  <div class="Main">
+  <div id="contact" class="Main">
     <h3>Let's Connect</h3>
     <h1>Contact Me</h1>
   </div>
   <div class="Contact-Me">
     <div class="contact-wrapper">
   <div class="contact-methods">
-    <button class="contact-btn" id="Email">anuragjainathmishra@gmail.com</button>
-    <button class="contact-btn" id="Whatsapp"><span class="icon"><img src="/Assets/Images/Whatsapp.svg"></span> Whatsapp</button>
+    <button onclick="window.location.href='mailto:anuragjainathmishra@gmail.com'" class="contact-btn" id="Email">anuragjainathmishra@gmail.com</button>
+    <button onclick="openWhatsApp()" class="contact-btn" id="Whatsapp"><span class="icon"><img src="/Assets/Images/Whatsapp.svg"></span> Whatsapp</button>
   </div>
 
   <p class="separator">or send a direct message</p>
 
-  <form class="contact-form">
+  <form action="https://formsubmit.co/anuragjainathmishra@gmail.com" method="POST" class="contact-form">
     <input type="email" placeholder="Your Email" required>
     <textarea placeholder="Your Message" required></textarea>
     <button type="submit">Send The Message</button>
@@ -349,5 +342,6 @@
   <h3>© 2025 Anurag Mishra. All rights reserved.</h3>
 
   </footer>
+  <script src="script.js"></script>
   </body>
 </html>
